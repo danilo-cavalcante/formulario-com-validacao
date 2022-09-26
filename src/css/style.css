@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    height: 100vh;
+    padding: 10px;
+}
+
+main {
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 402px;
+    width: 800px;
+    padding: 12px 50px;
+}
+
+.text {
+    color: #fff;
+}
+
+.text h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.text p {
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 300px;
+}
+
+.form form {
+    width: 340px;
+    height: 378px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.form form input, .form form textarea  {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.form form input {
+    margin-bottom: 15px;
+}
+
+.form form input::placeholder, .form form textarea::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+    color: #a8a8a8;
+}
+
+.form form textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 7px;
+}
+
+.form form textarea + small {
+    bottom: 2px;
+}
+
+.form-field {
+    position: relative;
+}
+
+.form-field small {
+    color: #F52E2E;
+    font-size: 8px;
+    font-weight: 400;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+
+.form-field.error small {
+    visibility: visible;
+}
+
+.form-field.error input, .form-field.error textarea {
+    border-color: #F52E2E;
+}
+
+.form-field.success input, .form-field.success textarea {
+    border-color: #00C22B;
+}
+
+.form form p {
+    font-size: 15px;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+.form form button {
+    padding: 12px;
+    width: 100%;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.form form button:hover {
+    background-color: #0aaa46;
+}
